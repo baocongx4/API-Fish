@@ -1,0 +1,37 @@
+<?php
+// nangcap.php
+// Kết quả giải mã cuối cùng của payload gốc (xuất ra JSON UTF-8 chuẩn)
+
+header("Content-Type: application/json; charset=utf-8");
+
+$data = [
+    "title" => "Nâng cấp PRO",
+    "author" => "Trần Huy",
+    "team" => "Team LAPRO",
+    "price" => "300000", // giá trị số (VND)
+    "price_display" => "300.000 VND",
+
+    "blockids" => [
+        "thatim933","nmh10","nmh11","nmh12","nmh13","nmh14","nmh15","nmh16","nmh17","nmh18",
+        "nmh19","nmh20","nmh21","nmh22","nmh23","nmh24","nmh25","nmh26","nmh27","nmh28",
+        "nmh29","nmh30","nmh00","nmh01","nmh02","nmh03","nmh04","nmh05","nmh06","nmh07",
+        "nmh08","nmh09"
+    ],
+
+    "server" => [
+        "isServer" => true,
+        "kichhoat" => true
+    ],
+
+    "admins" => ["ngockute1","ppuaru","tanlojo2023"],
+    "testers" => ["tuquyenteen"],
+
+    "version" => "9.5.5",
+    "update" => true,
+
+    "feature" => "Auto nâng cấp PRO miễn phí",
+    "graphics" => "Trần Huy — graphics",
+    "signature" => "Team LAPRO.VN — Thông báo bản nâng cấp PRO mod bởi Trần Huy"
+];
+
+echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
