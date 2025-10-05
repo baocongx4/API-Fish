@@ -1,3 +1,1 @@
-{
-  "status": "ON"
-}
+{"status":"ON"}
