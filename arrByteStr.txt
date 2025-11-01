@@ -1,1 +1,1 @@
-
+FishHandler_DOWN, FishHandler_RIGHT, FishHandler_UP, FishHandler_LEFT, FishHandler_OK, FishHandler_ENTER, FishingHandler_CENTER, NOT_FOUND
